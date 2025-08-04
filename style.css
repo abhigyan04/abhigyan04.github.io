@@ -105,4 +105,17 @@ footer {
   color: #888888;
 }
 
-#more {display: none;}
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #66ccff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.read-more-btn:hover {
+  color: #ffcc66;
+}
