@@ -106,21 +106,19 @@ footer {
 }
 
 .read-more-btn {
-  background-color: transparent;
-  border: 1px solid transparent;
+  background: transparent;
+  border: none;
   color: #66ccff;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  margin-top: 0.5rem;
+  padding: 0;
+  margin-left: 0.3rem;
+  text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .read-more-btn:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #66ccff;
   color: #ffcc66;
-  box-shadow: 0 0 6px rgba(102, 204, 255, 0.3);
 }
+
