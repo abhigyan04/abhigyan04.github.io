@@ -22,15 +22,17 @@
     <p>
       Hey there! I’m a Master's student at the University of Leeds specializing in graphics and game programming. My bachelor's degree was in computer science with a minor
       in data science. Having pursued these courses and implemented my learnings through projects and internships, I have deep understanding of core programming 
-      concepts, both high and low levels.</p>
-      <div id="moreText" style="display: none;">
-      <p>I love mathematics and working with data and am passionate about gaming which provides me with a range of abilities to
+      concepts, both high and low levels
+      <span id="dots">...</span>
+      <span id="moreText" style="display: none;">
+      I love mathematics and working with data and am passionate about gaming which provides me with a range of abilities to
       tackle tasks effectively.
       <br>My interests include real-time rendering, game engine architecture, and simulation physics.
       I’ve worked with OpenGL, VULKAN, C++, Unity 2D, C# and machine learning frameworks using Python.
       <br>I’m actively seeking roles primarily in game/graphics programming across the industry as well as oppertunities in the machine learing / data science sector.
-    </p></div>
-    <button id="readMoreBtn" class="read-more-btn">Read more...</button>
+      </span>
+      <button id="readMoreBtn" class="read-more-btn">Read more</button>
+    </p>
   </section>
 
   <section id="projects">
@@ -145,20 +147,20 @@
   <footer>
     <p>© 2025 Abhigyan Gandhi</p>
   </footer>
-  <script>
+ <script>
   const readMoreBtn = document.getElementById('readMoreBtn');
   const moreText = document.getElementById('moreText');
+  const dots = document.getElementById('dots');
 
   readMoreBtn.addEventListener('click', () => {
-    if (moreText.style.display === 'none') {
-      moreText.style.display = 'block';
-      readMoreBtn.textContent = 'Read less...';
-    } else {
-      moreText.style.display = 'none';
-      readMoreBtn.textContent = 'Read more...';
-    }
+    const isHidden = moreText.style.display === 'none';
+
+    moreText.style.display = isHidden ? 'inline' : 'none';
+    dots.style.display = isHidden ? 'none' : 'inline';
+    readMoreBtn.textContent = isHidden ? 'Read less' : 'Read more';
   });
 </script>
+
 
 </body>
 </html>
