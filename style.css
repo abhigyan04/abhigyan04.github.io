@@ -105,32 +105,4 @@ footer {
   color: #888888;
 }
 
-/* Toggleable 'Read more' section */
-.toggle-more {
-  display: none;
-}
-
-.more-text {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-}
-
-.toggle-more:checked ~ .more-text {
-  max-height: 500px; /* enough height for full text */
-  opacity: 1;
-}
-
-.read-more-btn {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #66ccff;
-  cursor: pointer;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.read-more-btn:hover {
-  color: #ffcc66;
-}
+#more {display: none;}
