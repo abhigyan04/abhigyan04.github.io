@@ -22,14 +22,15 @@
     <p>
       Hey there! I’m a Master's student at the University of Leeds specializing in graphics and game programming. My bachelor's degree was in computer science with a minor
       in data science. Having pursued these courses and implemented my learnings through projects and internships, I have deep understanding of core programming 
-      concepts, both high and low levels.<span id="dots">...</span><span id="more"> I love mathematics and working with data and am passionate about gaming which provides me with a range of abilities to
+      concepts, both high and low levels.</p>
+      <div id="moreText" style="display: none;">
+      <p>I love mathematics and working with data and am passionate about gaming which provides me with a range of abilities to
       tackle tasks effectively.
       <br>My interests include real-time rendering, game engine architecture, and simulation physics.
       I’ve worked with OpenGL, VULKAN, C++, Unity 2D, C# and machine learning frameworks using Python.
       <br>I’m actively seeking roles primarily in game/graphics programming across the industry as well as oppertunities in the machine learing / data science sector.
-      </span>
-    </p>
-    <button onclick="myFunction()" id="myBtn">Read more</button>
+    </p></div>
+    <button id="readMoreBtn" class="read-more-btn">Read more...</button>
   </section>
 
   <section id="projects">
@@ -55,16 +56,6 @@
     </div>
 
     <div class="project">
-      <h3>Animation Cycles and Collision Physics</h3>
-      <div class="media-row">
-        <img src="assets/animation_collision.png" alt="Animation and Collision Physics Screenshot" />
-      </div>
-      <p>
-        Implementation of animation cycles for a skeletal figure on different surfaces and collisions with bouncing dodecahedra using OpenGL and C++.
-      </p>
-    </div>
-
-    <div class="project">
       <h3>📱 LETTER SHIFT (Unity 2D)</h3>
       <div class="media-row">
         <img src="assets/letter_shift.png" alt="Letter Shift Screenshot" />
@@ -74,6 +65,16 @@
         procedurally generated puzzles. I am currently working on the final production phase for the web applicaiton and will release it soon.
       </p>
       <p><a href="https://letter-shift.com/">[Play Demo]</a> | <a href="https://github.com/abhigyan04/letter-shift">[Source Code]</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Animation Cycles and Collision Physics</h3>
+      <div class="media-row">
+        <img src="assets/animation_collision.png" alt="Animation and Collision Physics Screenshot" />
+      </div>
+      <p>
+        Implementation of animation cycles for a skeletal figure on different surfaces and collisions with bouncing dodecahedra using OpenGL and C++.
+      </p>
     </div>    
 
     <div class="project">
@@ -144,20 +145,20 @@
   <footer>
     <p>© 2025 Abhigyan Gandhi</p>
   </footer>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+  <script>
+  const readMoreBtn = document.getElementById('readMoreBtn');
+  const moreText = document.getElementById('moreText');
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
+  readMoreBtn.addEventListener('click', () => {
+    if (moreText.style.display === 'none') {
+      moreText.style.display = 'block';
+      readMoreBtn.textContent = 'Read less...';
+    } else {
+      moreText.style.display = 'none';
+      readMoreBtn.textContent = 'Read more...';
+    }
+  });
+</script>
+
 </body>
 </html>
