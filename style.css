@@ -105,6 +105,37 @@ footer {
   color: #888888;
 }
 
+/* Full screen 2-column layout */
+.main-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar on the left */
+.sidebar {
+  width: 33.33%;
+  padding: 2rem;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #333;
+}
+
+/* Scrollable content on the right */
+.projects-area {
+  width: 66.66%;
+  padding: 2rem;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #12121a;
+  color: #ffffff;
+}
+
+/* Adjust read more button */
 .read-more-btn {
   background: transparent;
   border: none;
@@ -122,3 +153,16 @@ footer {
   color: #ffcc66;
 }
 
+/* Responsive layout */
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .projects-area {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+}
