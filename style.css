@@ -1,5 +1,4 @@
 /* Global styles */
-
 body {
   font-family: 'Segoe UI', sans-serif;
   max-width: 900px;
@@ -106,7 +105,6 @@ footer {
   color: #888888;
 }
 
-/* Read more button */
 .read-more-btn {
   background: transparent;
   border: none;
@@ -119,12 +117,7 @@ footer {
   text-decoration: underline;
   transition: color 0.3s ease;
 }
+
 .read-more-btn:hover {
   color: #ffcc66;
 }
-
-/* Responsive fallback */
-@media (max-width: 768px) {
-  .main-layout {
-    flex-direction: column;
-  }
