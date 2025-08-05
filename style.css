@@ -132,6 +132,7 @@ footer {
 }
 
 .left {
+  position: fixed;
   width: 30%;
 }
 
