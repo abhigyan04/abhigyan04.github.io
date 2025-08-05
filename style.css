@@ -4,8 +4,8 @@
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  max-width: 900px;
-  margin: auto;
+  /*max-width: 900px;*/
+  margin: 0;
   padding: 2rem;
   background-color: #1e1e2f;
   color: #ffffff;
