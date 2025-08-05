@@ -128,7 +128,7 @@ footer {
 /* Create two unequal columns that floats next to each other */
 .container {
   /*float: left;*/
-  display: flex;
+  /*display: flex;*/
   /*padding: 10px;*/
 }
 
@@ -146,7 +146,6 @@ footer {
 .right {
   margin-left: 30vw;
   padding: 2rem;
-  width: calc(100vw - 30vw);
 }
 
 /* Clear floats after the columns
