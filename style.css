@@ -128,25 +128,20 @@ footer {
 /* Create two unequal columns that floats next to each other */
 .container {
   /*float: left;*/
-  /*display: flex;*/
+  display: flex;
+  align-items: flex-start;
   /*padding: 10px;*/
 }
 
 .left {
-  position: fixed;
-  top: 500px;
-  left: 0;
-  height: 100vh;
-  overflow-y: auto;
   padding: 2rem;
   background-color: #1e1e2f;
   width: 30vw;
 }
 
 .right {
-  margin-left: 30vw;
+  width: 70vw;
   padding: 2rem;
-  padding-top: 120px;
 }
 
 /* Clear floats after the columns
