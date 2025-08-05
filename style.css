@@ -127,17 +127,25 @@ footer {
 
 /* Create two unequal columns that floats next to each other */
 .column {
-  float: left;
+  /*float: left;*/
+  display: flex;
   padding: 10px;
 }
 
 .left {
   position: fixed;
-  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #1e1e2f;
   width: 30%;
 }
 
 .right {
+  margin-left: 30%;
+  padding: 10px;
   width: 70%;
 }
 
