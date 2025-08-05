@@ -7,16 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Abhigyan Gandhi</h1>
-    <p>Graphics and Game Programmer | Computer Science and Data Science Engineer</p>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
+  <div class="main-layout">
+    <aside class="sidebar">
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -34,7 +26,17 @@
       <button id="readMoreBtn" class="read-more-btn">Read more</button>
     </p>
   </section>
+    </aside>
 
+  <main class="projects-area">
+      <header>
+    <h1>Abhigyan Gandhi</h1>
+    <p>Graphics and Game Programmer | Computer Science and Data Science Engineer</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
   <section id="projects">
     <h2>Projects</h2>
 
@@ -143,6 +145,8 @@
   <footer>
     <p>© 2025 Abhigyan Gandhi</p>
   </footer>
+  </main>
+  </div>
  <script>
   const readMoreBtn = document.getElementById('readMoreBtn');
   const moreText = document.getElementById('moreText');
