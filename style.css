@@ -132,22 +132,11 @@ footer {
 }
 
 .left {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;  
-  /*width: 30%;*/
+  width: 30%;
 }
 
 .right {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;  
-  /*width: 70%;*/
+  width: 70%;
 }
 
 /* Clear floats after the columns */
