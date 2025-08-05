@@ -134,6 +134,8 @@ footer {
 }
 
 .left {
+  position: sticky;
+  height: fit-content;
   padding: 2rem;
   background-color: #1e1e2f;
   width: 30vw;
