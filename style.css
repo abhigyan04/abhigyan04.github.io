@@ -132,6 +132,7 @@ footer {
 }
 
 .left {
+  overflow: hidden;
   width: 30%;
 }
 
