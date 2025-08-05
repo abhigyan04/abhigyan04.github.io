@@ -135,8 +135,7 @@ footer {
 
 .left {
   position: sticky;
-  top: 20px;
-  align-self: flex-start;
+  top: 200px;
   height: fit-content;
   padding: 2rem;
   background-color: #1e1e2f;
