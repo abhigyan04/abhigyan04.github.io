@@ -6,7 +6,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   /*max-width: 900px;*/
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   background-color: #1e1e2f;
   color: #ffffff;
   line-height: 1.6;
@@ -126,10 +126,10 @@ footer {
 }
 
 /* Create two unequal columns that floats next to each other */
-.column {
+.container {
   /*float: left;*/
   display: flex;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 .left {
@@ -138,23 +138,23 @@ footer {
   left: 0;
   height: 100vh;
   overflow-y: auto;
-  padding: 10px;
+  padding: 2rem;
   background-color: #1e1e2f;
-  width: 30%;
+  width: 30vw;
 }
 
 .right {
-  margin-left: 30%;
-  padding: 10px;
-  width: 70%;
+  margin-left: 30vw;
+  padding: 2rem;
+  width: calc(100vw - 30vw);
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 #myBtn {
   display: none;
