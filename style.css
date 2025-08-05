@@ -134,7 +134,7 @@ footer {
 
 .left {
   position: fixed;
-  top: 0;
+  top: 120px;
   left: 0;
   height: 100vh;
   overflow-y: auto;
@@ -146,6 +146,7 @@ footer {
 .right {
   margin-left: 30vw;
   padding: 2rem;
+  padding-top: 120px;
 }
 
 /* Clear floats after the columns
